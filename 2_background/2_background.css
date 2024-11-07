@@ -1,7 +1,7 @@
 #myDiv {
 	width: 600px;
 	height: 600px;
-	background: red url("./assets/flying-7288_256.gif") no-repeat top left/50px
+	background: red url("../assets/flying-7288_256.gif") no-repeat top left/50px
 		50px;
 	animation: myMove 5s infinite;
 }
