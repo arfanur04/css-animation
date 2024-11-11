@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			#myDIV {
+				width: 300px;
+				height: 200px;
+				border: 1px solid #000;
+				background-image: url("./assets/smiley.gif");
+				background-position-y: top;
+				animation: myMove 5s infinite;
+			}
+
+			@keyframes myMove {
+				50% {
+					background-position-y: center;
+				}
+			}
+		</style>
+	</head>
+	<body style="margin: 0 100px">
+		<h1>Animation of background-position-y</h1>
+
+		<p>
+			Gradually change the background-position-y from "top" to "center", and
+			back to "top":
+		</p>
+		<div id="myDIV"></div>
+	</body>
+</html>
