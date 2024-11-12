@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			#myDIV {
+				width: 300px;
+				height: 200px;
+				border: 1px solid #000;
+				background-image: url("./assets/w3css.gif");
+				background-size: 20px 20px;
+				animation: myMove 5s infinite;
+			}
+
+			@keyframes myMove {
+				50% {
+					background-size: 125px 125px;
+				}
+			}
+		</style>
+	</head>
+	<body style="margin: 0 100px">
+		<h1>Animation of background-size</h1>
+		<p>
+			Gradually change the background-size from "10px 10px" to "125px 125px",
+			and back:
+		</p>
+		<div id="myDIV"></div>
+	</body>
+</html>
