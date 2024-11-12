@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			#myDIV {
+				background-color: lightblue;
+				width: 100%;
+				block-size: 30px;
+				animation: myMove 5s infinite;
+			}
+			@keyframes myMove {
+				50% {
+					block-size: 100px;
+				}
+			}
+		</style>
+	</head>
+	<body style="margin: 0 100px">
+		<h1>Animation of block-size</h1>
+
+		<p>
+			Gradually change the block-size property from 30px to 100px, and back to
+			30px:
+		</p>
+		<p></p>
+
+		<div id="myDIV">This is my DIV element.</div>
+	</body>
+</html>
