@@ -7,10 +7,31 @@
 			content="width=device-width, initial-scale=1.0"
 		/>
 		<title>3_background-color</title>
-		<link
+		<!-- <link
 			rel="stylesheet"
 			href="3_background-color.css"
-		/>
+		/> -->
+		<style>
+			#myDiv {
+				width: 300px;
+				height: 200px;
+				background: red;
+				animation: myMove 5s infinite;
+				border: 5px solid blue;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				color: transparent;
+			}
+
+			@keyframes myMove {
+				50% {
+					background-color: blue;
+					border: 5px solid red;
+					color: white;
+				}
+			}
+		</style>
 	</head>
 	<body style="display: flex; justify-content: center">
 		<main>

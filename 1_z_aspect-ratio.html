@@ -7,10 +7,32 @@
 			content="width=device-width, initial-scale=1.0"
 		/>
 		<title>1z_aspect-ratio</title>
-		<link
+		<!-- <link
 			rel="stylesheet"
 			href="1z_aspect-ratio.css"
-		/>
+		/> -->
+		<style>
+			.container {
+				display: grid;
+				width: 90%;
+				margin: auto;
+				border: 1px solid #000;
+				grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+				gap: 10px;
+				padding: 10px;
+			}
+
+			.container > div {
+				aspect-ratio: 3 / 2;
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+			}
+		</style>
 	</head>
 	<body style="margin: 0 100px">
 		<h3>CSS aspect-ratio property.</h3>
