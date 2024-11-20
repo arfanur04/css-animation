@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			#myDIV {
+				inline-size: 70%;
+				block-size: 200px;
+				box-sizing: border-box;
+				border-block: 1px solid black;
+				background-color: lightgreen;
+				animation: myMove 5s infinite;
+			}
+			@keyframes myMove {
+				50% {
+					border-block: 15px solid orange;
+				}
+			}
+		</style>
+	</head>
+	<body style="margin: 0 100px">
+		<h1>Animation of border-block</h1>
+
+		<p>Gradually change the border-block property:</p>
+		<p></p>
+		<div id="myDIV"></div>
+
+		<p>
+			The border-block property is a shorthand property for all border-block
+			properties.
+		</p>
+		<p>
+			See individual border-block properties to see which is
+			<em>animatable</em>.
+		</p>
+	</body>
+</html>
