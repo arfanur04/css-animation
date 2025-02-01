@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			#myDIV {
+				width: 300px;
+				height: 200px;
+				background-color: lightgreen;
+				border-block-style: solid;
+				border-block-width: 1px;
+				animation: myMove 5s infinite;
+			}
+
+			@keyframes myMove {
+				50% {
+					border-block-width: 25px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Animation of border-block-width</h1>
+
+		<p>
+			Gradually change the border-block-width property from 1px to 25px, then
+			back:
+		</p>
+		<p></p>
+		<div id="myDIV"></div>
+	</body>
+</html>
